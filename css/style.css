@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    margin: auto;
+    max-width: 1000px;
+}
+
+header {
+    text-align: center;
+    background-color: #48c5ce;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 20px;
+    height: 500px;
+    width: 100%;
+    background-image: url("../images/people.jpg");
+    background-size: cover;
+}
+
+.form-area{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 70%);
+    padding: 20px;
+}
+
+h2,
+p {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-area form input,
+.form-area form select {
+    padding: 10px 5px;
+    border: none;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("../images/arrow.jpg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    color: white;
+    background-color: #48c5ce;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #202121;
+}
+footer img{
+    width: 160px;
+    margin-right: 40px;
+}
+.infos{
+    display: inline-block;
+    text-align: left;
+    color: white;
+    max-width: 40%;
+}
+.infos p{
+    font-size: 1.11rem;
+    margin-bottom: 10px;
+}
+.infos h3{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width:550px) {
+    main{
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+    }
+    footer{
+        display: inline-block;
+        text-align: center;
+    }
+    footer img{
+        margin: 0 auto;
+    }
+    .infos{
+        margin: 20px auto;
+        display: block;
+        max-width: none;
+    }
+}
